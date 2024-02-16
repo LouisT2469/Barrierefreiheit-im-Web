@@ -2,7 +2,7 @@
 <script>
     import { onMount } from 'svelte';
   
-    const targetDomain = 'https://example.com';
+    const targetDomain = 'https://www.figma.com/file/z0jlq6G54HjmksSoxv9sKf/Facharbeit-V1?type=design&node-id=0%3A1&mode=design&t=iNtcAEqUezvCkX3u-1';
   
     onMount(() => {
       window.location.href = targetDomain;
