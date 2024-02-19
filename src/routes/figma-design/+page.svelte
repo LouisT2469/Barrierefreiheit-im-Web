@@ -1,4 +1,3 @@
-<!-- Redirect.svelte -->
 <script>
     import { onMount } from 'svelte';
   
@@ -20,4 +19,3 @@
   </noscript>
   
   <p>Bitte warten Sie, während Sie zu {targetDomain} weitergeleitet werden...</p>
-  
