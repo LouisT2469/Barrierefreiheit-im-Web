@@ -8,7 +8,7 @@
 		<a
 			class="font-['Inter'] text-[14px] font-[500] text-[#202124]"
 			aria-label="Weiterleitung zu louist2469.de"
-			href="https://louist2469.de/">Louis T. • 2024</a
+			href="https://louist2469.de/">Louis T. • Version 1.0</a
 		>
 		<button
 			on:click={() => {
@@ -25,7 +25,3 @@
 		</button>
 	</div>
 </div>
-
-<!--	<div class="fixed bottom-2 mb-2 w-full">
-
-</div>-->

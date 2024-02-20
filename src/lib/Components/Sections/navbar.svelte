@@ -38,7 +38,7 @@
 </div>
 
 <div class="block lg:hidden">
-	<div class="relative z-50 mb-6 bg-white pt-4">
+	<div class="relative z-50 mb-6 bg-white py-4">
 		<div class="relative z-10 flex items-center justify-between px-[16px]">
 			<h2 class="font-['Inter'] text-[20px] font-[700] text-black">Barrierefreiheit im Web</h2>
 			<button
