@@ -1,4 +1,4 @@
-<footer class="fixed bottom-3 flex w-full items-center justify-between px-[96px]">
+<div class="flex items-center justify-between px-[16px] lg:px-[96px]">
 	<a
 		class="font-['Inter'] text-[14px] font-[500] text-[#202124]"
 		aria-label="zur Kontakt Seite"
@@ -24,4 +24,8 @@
 			</svg>
 		</button>
 	</div>
-</footer>
+</div>
+
+<!--	<div class="fixed bottom-2 mb-2 w-full">
+
+</div>-->
