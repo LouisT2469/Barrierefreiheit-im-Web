@@ -36,7 +36,7 @@
 	<div class="my-[16px] mb-8 flex flex-wrap justify-between gap-y-4 lg:my-[80px]">
 		<div class="rounded-md border-[2px] border-gray-200 p-4 lg:max-w-[40%]">
 			<div class="flex flex-col justify-between">
-				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+				<Text type={'h2'} classes={' font-[600]'} size={'text-[18px] lg:text-[22px]'}
 					>Download der Facharbeit
 				</Text>
 				<Text type={'p'} classes={'w-full mb-[16px]'}

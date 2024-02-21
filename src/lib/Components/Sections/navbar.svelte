@@ -1,18 +1,27 @@
-<script>
+<script lang="ts">
 	import { goto } from '$app/navigation';
 	import Text from '../UI/text.svelte';
+	import { onDestroy } from 'svelte';
+	import { scaleStore } from '$lib/stores';
+
 	let navMenu = false; //false
 
-	let scale = true;
+	let isScaled: boolean;
+	const unsubscribe = scaleStore.subscribe((value) => {
+		isScaled = value;
+	});
 
 	function scaleText() {
-		scale = !scale;
-		localStorage.setItem('scale', String(scale));
+		scaleStore.update((isScaled) => !isScaled);
 	}
+
+	onDestroy(() => {
+		unsubscribe();
+	});
 </script>
 
 <div class="hidden lg:block">
-	<nav class="mt-[8px] flex items-center justify-between px-[16px] lg:px-[96px]">
+	<nav class="flex items-center justify-between bg-white px-[16px] pt-[8px] lg:px-[96px]">
 		<button
 			aria-label="zur Startseite"
 			on:click={() => {
@@ -34,7 +43,7 @@
 			class="h-[43px] w-fit cursor-pointer rounded-[8px] bg-black px-4"
 		>
 			<Text type={'p'} size={'text-[14px]'} color={'text-white'}
-				>Text {#if scale}
+				>Text {#if isScaled}
 					verkleinern
 				{:else}
 					vergrößern
@@ -73,7 +82,7 @@
 					class="mt-8 h-[43px] w-full cursor-pointer rounded-[8px] bg-black px-4"
 				>
 					<Text type={'p'} size={'text-[16px]'} color={'text-white'}
-						>Text {#if scale}
+						>Text {#if isScaled}
 							verkleinern
 						{:else}
 							vergrößern

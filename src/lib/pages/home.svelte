@@ -36,7 +36,7 @@
 	<div class="my-[16px] mb-8 flex flex-wrap justify-between gap-y-4 lg:my-[80px]">
 		<div class="max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col justify-between">
-				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+				<Text type={'h2'} classes={'font-[600] '} size={'text-[18px] lg:text-[22px]'}
 					>Was ist Barrierefreiheit?</Text
 				>
 				<Text type={'p'} classes={'w-full'}
@@ -50,7 +50,7 @@
 		</div>
 		<div class=" max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col">
-				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+				<Text type={'h2'} classes={'font-[600]'} size={'text-[18px] lg:text-[22px]'}
 					>Möglichkeiten als Nutzer:</Text
 				>
 				<Text type={'p'} classes={'w-full'}
@@ -74,7 +74,7 @@
 		<div class="max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col">
 				<div>
-					<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+					<Text type={'h2'} classes={'font-[600]'} size={'text-[18px] lg:text-[22px]'}
 						>Möglichkeiten als Entwickler:</Text
 					>
 					<Text type={'p'} classes={'w-full'}
