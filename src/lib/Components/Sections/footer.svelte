@@ -1,14 +1,22 @@
+<script>
+	import Text from '../UI/text.svelte';
+</script>
+
 <div class="flex items-center justify-between px-[16px] lg:px-[96px]">
-	<a
-		class="font-['Inter'] text-[14px] font-[500] text-[#202124]"
-		aria-label="zur Kontakt Seite"
-		href="/kontakt">Kontakt</a
+	<Text
+		type={'a'}
+		label={'zur Kontakt Seite'}
+		goto={'/kontakt'}
+		size={'text-[14px]'}
+		color={'text-[#202124]'}>Kontakt</Text
 	>
 	<div class="flex gap-x-[16px]">
-		<a
-			class="font-['Inter'] text-[14px] font-[500] text-[#202124]"
-			aria-label="Weiterleitung zu louist2469.de"
-			href="https://louist2469.de/">Louis T. • Version 1.0</a
+		<Text
+			type={'a'}
+			label={'Weiterleitung zu louist2469.de'}
+			goto={'https://louist2469.de/'}
+			size={'text-[14px]'}
+			color={'text-[#202124]'}>Louis T. • Version 1.1</Text
 		>
 		<button
 			on:click={() => {

@@ -1,22 +1,21 @@
 <script>
 	import { goto } from '$app/navigation';
+	import Text from '$lib/Components/UI/text.svelte';
 </script>
 
 <div class="px-[16px] lg:px-[96px]">
 	<div class="flex h-fit w-full flex-row lg:mt-[64px]">
 		<div class=" flex w-full lg:w-1/2">
 			<div class="flex flex-col">
-				<h2 class="font-['Inter'] text-[18px] font-[600] text-black lg:text-[24px]">
-					Barrierefreiheit im Web:
-				</h2>
-				<h1 class="font-['Inter'] text-[26px] font-[700] text-black lg:text-[32px]">
-					Möglichkeiten als Nutzer und Entwickler
-				</h1>
-				<p class="w-full font-['Inter'] text-[16px] font-[400] text-black lg:w-3/4">
-					Eine Arbeit zu den Möglichkeiten der Barrierefreiheit im Internet, welche sich intensiv
+				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[24px]'}
+					>Barrierefreiheit im Web:</Text
+				>
+				<Text type={'h1'}>Möglichkeiten als Nutzer und Entwickler</Text>
+				<Text type={'p'} classes={'w-full lg:w-3/4'}
+					>Eine Arbeit zu den Möglichkeiten der Barrierefreiheit im Internet, welche sich intensiv
 					mit der Umsetzung einer barrierefreien Website beschäftigt. Sie entstand als Praxis- und
-					Selbstanteil einer Facharbeit.
-				</p>
+					Selbstanteil einer Facharbeit.</Text
+				>
 				<button
 					on:click={() => {
 						goto('/facharbeit');
@@ -24,7 +23,7 @@
 					aria-label="zur Facharbeitsseite"
 					class="mt-4 w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
 				>
-					<span class="font-['Inter'] text-[16px] font-[500] text-black">mehr Informationen</span>
+					<Text type={'p'} weight={'font-[500]'}>mehr Informationen</Text>
 				</button>
 			</div>
 		</div>
@@ -37,28 +36,28 @@
 	<div class="my-[16px] mb-8 flex flex-wrap justify-between gap-y-4 lg:my-[80px]">
 		<div class="max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col justify-between">
-				<h2 class="font-['Inter'] text-[18px] font-[600] text-black lg:text-[24px]">
-					Was ist Barrierefreiheit?
-				</h2>
-				<p class="w-full font-['Inter'] text-[16px] font-[400] text-black">
-					Barrierefreiheit im Internet bedeutet nicht nur einfache Nutzung für körperlich
+				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+					>Was ist Barrierefreiheit?</Text
+				>
+				<Text type={'p'} classes={'w-full'}
+					>Barrierefreiheit im Internet bedeutet nicht nur einfache Nutzung für körperlich
 					eingeschränkte Personen, sondern auch für alle anderen, wie Ältere oder Nutzer mit
 					unterschiedlichen Geräten. Web-Entwicklung zielt darauf ab, Websites trotz vieler
 					Einschränkungen möglichst zugänglich zu machen, obwohl 100%ige Barrierefreiheit utopisch
-					ist.
-				</p>
+					ist.</Text
+				>
 			</div>
 		</div>
 		<div class=" max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col">
-				<h2 class="font-['Inter'] text-[18px] font-[600] text-black lg:text-[24px]">
-					Möglichkeiten als Nutzer:
-				</h2>
-				<p class="w-full font-['Inter'] text-[16px] font-[400] text-black">
-					Erfahren Sie hier, wie Sie mit spezieller Software und Hardware das Internet barrierefrei
+				<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+					>Möglichkeiten als Nutzer:</Text
+				>
+				<Text type={'p'} classes={'w-full'}
+					>Erfahren Sie hier, wie Sie mit spezieller Software und Hardware das Internet barrierefrei
 					nutzen können. Entdecken Sie ausgewählte IT-Lösungen, die es Ihnen ermöglichen, das
-					Internet ohne Einschränkungen zu erkunden und zu nutzen.
-				</p>
+					Internet ohne Einschränkungen zu erkunden und zu nutzen.</Text
+				>
 				<div class="mt-6 flex justify-between">
 					<button
 						on:click={() => {
@@ -67,8 +66,7 @@
 						aria-label="zur Nutzerseite"
 						class="h-[46px] w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
 					>
-						<span class=" font-['Inter'] text-[16px] font-[500] text-black">mehr Informationen</span
-						>
+						<Text type={'p'} weight={'font-[500]'}>mehr Informationen</Text>
 					</button>
 				</div>
 			</div>
@@ -76,14 +74,14 @@
 		<div class="max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
 			<div class="flex flex-col">
 				<div>
-					<h2 class="font-['Inter'] text-[18px] font-[600] text-black lg:text-[24px]">
-						Möglichkeiten als Entwickler:
-					</h2>
-					<p class="w-full font-['Inter'] text-[16px] font-[400] text-black">
-						Viele IT-Lösungen dienen lediglich als Ergänzung und funktionieren nur dann, wenn
+					<Text type={'h2'} classes={'text-[18px] font-[600] lg:text-[22px]'}
+						>Möglichkeiten als Entwickler:</Text
+					>
+					<Text type={'p'} classes={'w-full'}
+						>Viele IT-Lösungen dienen lediglich als Ergänzung und funktionieren nur dann, wenn
 						Entwickler sich an bestimmte Normen und Regeln halten. Erfahren Sie hier ausgewählte
-						Ansätze und Techniken zur Förderung von Barrierefreiheit.
-					</p>
+						Ansätze und Techniken zur Förderung von Barrierefreiheit.</Text
+					>
 				</div>
 				<div class="mt-6 flex h-full justify-between">
 					<button
@@ -93,7 +91,7 @@
 						aria-label="zur Nutzerseite"
 						class="h-[46px] w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
 					>
-						<span class="font-['Inter'] text-[16px] font-[500] text-black">mehr Informationen</span>
+						<Text type={'p'} weight={'font-[500]'}>mehr Informationen</Text>
 					</button>
 				</div>
 			</div>
