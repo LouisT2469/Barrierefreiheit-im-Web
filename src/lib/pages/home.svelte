@@ -41,21 +41,12 @@
 					Was ist Barrierefreiheit?
 				</h2>
 				<p class="w-full font-['Inter'] text-[16px] font-[400] text-black">
-					Erfahren Sie, was Barrierefreiheit im Internet wirklich bedeutet. Es geht nicht nur um die
-					erleichterte Nutzung von Websites für körperlich eingeschränkte Personen, sondern um jede
-					Form von Einschränkung, sei es durch Alter...
+					Barrierefreiheit im Internet bedeutet nicht nur einfache Nutzung für körperlich
+					eingeschränkte Personen, sondern auch für alle anderen, wie Ältere oder Nutzer mit
+					unterschiedlichen Geräten. Web-Entwicklung zielt darauf ab, Websites trotz vieler
+					Einschränkungen möglichst zugänglich zu machen, obwohl 100%ige Barrierefreiheit utopisch
+					ist.
 				</p>
-				<div class="mt-6 flex justify-between">
-					<button
-						on:click={() => {
-							goto('/entwickler');
-						}}
-						aria-label="zur Nutzerseite"
-						class="h-[46px] w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
-					>
-						<span class="font-['Inter'] text-[16px] font-[500] text-black">mehr Informationen</span>
-					</button>
-				</div>
 			</div>
 		</div>
 		<div class=" max-w-[469px] rounded-md border-[2px] border-gray-200 p-4">
@@ -91,7 +82,7 @@
 					<p class="w-full font-['Inter'] text-[16px] font-[400] text-black">
 						Viele IT-Lösungen dienen lediglich als Ergänzung und funktionieren nur dann, wenn
 						Entwickler sich an bestimmte Normen und Regeln halten. Erfahren Sie hier ausgewählte
-						Ansätze und Techniken zur Förderung...
+						Ansätze und Techniken zur Förderung von Barrierefreiheit.
 					</p>
 				</div>
 				<div class="mt-6 flex h-full justify-between">

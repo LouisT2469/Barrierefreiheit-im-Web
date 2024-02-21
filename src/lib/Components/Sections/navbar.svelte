@@ -1,22 +1,36 @@
 <script>
 	import { goto } from '$app/navigation';
 	let navMenu = false; //false
+
+	let scale = true;
+
+	function scaleText() {
+		scale = !scale;
+		localStorage.setItem('scale', String(scale));
+	}
 </script>
 
 <div class="hidden lg:block">
 	<nav class="mt-[8px] flex items-center justify-between px-[16px] lg:px-[96px]">
-		<h2 class="font-['Inter'] text-[20px] font-[700] text-black">Barrierefreiheit im Web</h2>
+		<button
+			aria-label="zur Startseite"
+			on:click={() => {
+				goto('/');
+			}}
+		>
+			<h2 class="font-['Inter'] text-[20px] font-[700] text-black">Barrierefreiheit im Web</h2>
+		</button>
 
 		<div class="flex gap-x-[64px]">
 			<a
 				class="font-['Inter'] text-[16px] font-[500] text-black"
-				aria-label="zur Entwickler Seite"
-				href="/entwickler">Entwickler</a
+				aria-label="zur Nutzer Seite"
+				href="/nutzer">Nutzer</a
 			>
 			<a
 				class="font-['Inter'] text-[16px] font-[500] text-black"
-				aria-label="zur Nutzer Seite"
-				href="/nutzer">Nutzer</a
+				aria-label="zur Entwickler Seite"
+				href="/entwickler">Entwickler</a
 			>
 			<a
 				class="font-['Inter'] text-[16px] font-[500] text-black"
@@ -26,13 +40,17 @@
 		</div>
 
 		<button
-			aria-label="zur Newsletter Seite"
-			on:click={() => {
-				goto('/newsletter');
-			}}
+			aria-label="Text vergrößern/ verkleinern"
+			on:click={scaleText}
 			class="h-[43px] w-fit cursor-pointer rounded-[8px] bg-black px-4"
 		>
-			<span class="font-['Inter'] text-[14px] text-white">Newsletter</span>
+			<span class="font-['Inter'] text-[14px] text-white"
+				>Text {#if scale}
+					verkleinern
+				{:else}
+					vergrößern
+				{/if}</span
+			>
 		</button>
 	</nav>
 </div>
@@ -58,14 +76,14 @@
 		{#if navMenu}
 			<div class="fixed z-0 -mt-[2px] flex w-full flex-col gap-y-2 bg-white px-8 py-4 shadow-2xl">
 				<a
-					class=" font-['Inter'] text-[16px] font-[500] text-black"
-					aria-label="zur Entwickler Seite"
-					href="/entwickler">Entwickler</a
-				>
-				<a
 					class="rounded-md font-['Inter'] text-[16px] font-[500] text-black"
 					aria-label="zur Nutzer Seite"
 					href="/nutzer">Nutzer</a
+				>
+				<a
+					class=" font-['Inter'] text-[16px] font-[500] text-black"
+					aria-label="zur Entwickler Seite"
+					href="/entwickler">Entwickler</a
 				>
 				<a
 					class="rounded-md font-['Inter'] text-[16px] font-[500] text-black"
@@ -73,13 +91,17 @@
 					href="/facharbeit">Facharbeit</a
 				>
 				<button
-					aria-label="zur Newsletter Seite"
-					on:click={() => {
-						goto('/newsletter');
-					}}
+					aria-label="Text vergrößern/ verkleinern"
+					on:click={scaleText}
 					class="mt-8 h-[43px] w-full cursor-pointer rounded-[8px] bg-black px-4"
 				>
-					<span class="font-['Inter'] text-[16px] text-white">Newsletter</span>
+					<span class="font-['Inter'] text-[16px] text-white"
+						>Text {#if scale}
+							verkleinern
+						{:else}
+							vergrößern
+						{/if}</span
+					>
 				</button>
 			</div>
 		{/if}
