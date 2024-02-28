@@ -27,13 +27,13 @@
 
 {#if type == 'p'}
 	<p
-		class="break-words font-['Inter'] {weight} {color} {classes} {isScaled ? 'text-[32px]' : size}"
+		class="break-words {weight} {color} {classes} {isScaled ? 'text-[32px]' : size}"
 	>
 		<slot />
 	</p>
 {:else if type == 'h1'}
 	<h1
-		class="break-words font-['Inter'] font-[700] {color} {classes} {isScaled
+		class="break-words font-[700] {color} {classes} {isScaled
 			? 'text-[52px] lg:text-[64px]'
 			: 'text-[26px] lg:text-[32px]'}"
 	>
@@ -42,7 +42,7 @@
 {:else if type == 'h2'}
 	{#if isScaled}
 		<h2
-			class="break-words font-['Inter'] {classes.length == 0
+			class="break-words {classes.length == 0
 				? 'font-[700]'
 				: ''}  {color} {classes} text-[40px]"
 		>
@@ -50,7 +50,7 @@
 		</h2>
 	{:else}
 		<h2
-			class="break-words font-['Inter'] {classes.length == 0
+			class="break-words {classes.length == 0
 				? 'text-[20px] font-[700]'
 				: ''}  {color} {classes}"
 		>
@@ -59,7 +59,7 @@
 	{/if}
 {:else if type == 'a'}
 	<a
-		class="break-words font-['Inter'] font-[500] {color} {classes} {isScaled
+		class="break-words font-[500] {color} {classes} {isScaled
 			? 'text-[32px]'
 			: size}"
 		aria-label={label}
