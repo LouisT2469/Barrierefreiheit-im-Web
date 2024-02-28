@@ -79,7 +79,7 @@
 				<button
 					aria-label="Text vergrößern/ verkleinern"
 					on:click={scaleText}
-					class="mt-8 h-[43px] w-full cursor-pointer rounded-[8px] bg-black px-4"
+					class="mt-8 w-full cursor-pointer rounded-[8px] bg-black px-4 text-center align-middle"
 				>
 					<Text type={'p'} size={'text-[16px]'} color={'text-white'}
 						>Text {#if isScaled}

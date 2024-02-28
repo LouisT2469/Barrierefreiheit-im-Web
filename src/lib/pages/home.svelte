@@ -64,7 +64,7 @@
 							goto('/nutzer');
 						}}
 						aria-label="zur Nutzerseite"
-						class="h-[46px] w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
+						class="mt-4 w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
 					>
 						<Text type={'p'} weight={'font-[500]'}>mehr Informationen</Text>
 					</button>
@@ -89,7 +89,7 @@
 							goto('/entwickler');
 						}}
 						aria-label="zur Nutzerseite"
-						class="h-[46px] w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
+						class="mt-4 w-fit cursor-pointer rounded-full bg-[#E8E8E8] px-[16px] py-[8px]"
 					>
 						<Text type={'p'} weight={'font-[500]'}>mehr Informationen</Text>
 					</button>
