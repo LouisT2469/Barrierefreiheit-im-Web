@@ -16,7 +16,7 @@
 			label={'Weiterleitung zu louist2469.de'}
 			goto={'https://louist2469.de/'}
 			size={'text-[14px]'}
-			color={'text-[#202124]'}>Louis T. • Version 1.2</Text
+			color={'text-[#202124]'}>Louis T. • Version 2.0</Text
 		>
 		<button
 			on:click={() => {
