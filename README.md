@@ -12,5 +12,5 @@ This website was created as part of a subject paper in computer science at a gra
 - [@louist2469](https://www.github.com/louist2469)
 - Internal school counsellor
 ## Links
-- [Technical paper download](https://facharbeit.louist2469.de/facharbeit.pdf)
-- [Practical part](https://facharbeit.louist2469.de/)
+- [Technical paper download](https://facharbeit.louist.de/facharbeit.pdf)
+- [Practical part](https://facharbeit.louist.de/)
